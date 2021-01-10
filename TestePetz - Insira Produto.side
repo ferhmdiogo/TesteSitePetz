@@ -1,0 +1,107 @@
+{
+  "id": "4e097bb5-b95d-4284-867a-25a98d784d02",
+  "version": "2.0",
+  "name": "TestePetz - Insira Produto",
+  "url": "https://www.petz.com.br",
+  "tests": [{
+    "id": "908c6a54-c293-4fe6-9662-3a00c1d2727f",
+    "name": "TestePetz - Insira Produto",
+    "commands": [{
+      "id": "00bc96c7-9956-4597-b2dc-a1f1b74bd2f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcd508f9-dd46-498b-b62b-cde09a42f747",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "657x714",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a8ae05c-c1bd-4bc1-a7fc-24db3a0d8b5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hold",
+      "targets": [
+        ["css=.hold", "css:finder"],
+        ["xpath=//div[8]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fffba09c-7cb0-4e3d-a96d-787873db7923",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbb20583-3d5e-4740-9f9b-a9de77560385",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": "premier"
+    }, {
+      "id": "c2ac714c-d902-4349-af90-66178f78f99c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-icon",
+      "targets": [
+        ["css=.custom-icon", "css:finder"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35d04aac-b1e3-4470-8f59-e609c7926565",
+      "comment": "",
+      "command": "click",
+      "target": "css=.liProduct:nth-child(3) .product-img",
+      "targets": [
+        ["css=.liProduct:nth-child(3) .product-img", "css:finder"],
+        ["xpath=//img[@alt='Ração Premier Fórmula para Cães Filhotes de Raças Grandes Sabor Frango - 15kg']", "xpath:img"],
+        ["xpath=(//a[@id='produto-href']/img)[3]", "xpath:idRelative"],
+        ["xpath=//li[3]/a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d95e7bf1-7cbd-4206-bcb1-b719ef548bf3",
+      "comment": "",
+      "command": "click",
+      "target": "id=adicionarAoCarrinho",
+      "targets": [
+        ["id=adicionarAoCarrinho", "id"],
+        ["css=#adicionarAoCarrinho", "css:finder"],
+        ["xpath=//button[@id='adicionarAoCarrinho']", "xpath:attributes"],
+        ["xpath=//div[@id='divProdutoVariacao']/div[2]/div[3]/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Adicionar ao carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7dc45e36-5237-47e8-9cfb-43d36a11483c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["908c6a54-c293-4fe6-9662-3a00c1d2727f"]
+  }],
+  "urls": ["https://www.petz.com.br/"],
+  "plugins": []
+}

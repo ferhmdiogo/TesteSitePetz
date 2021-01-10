@@ -1,0 +1,71 @@
+{
+  "id": "f26b8f2c-7662-49f9-97c8-985da9127797",
+  "version": "2.0",
+  "name": "TestePetz - Consulta Ração",
+  "url": "https://www.petz.com.br",
+  "tests": [{
+    "id": "bd1fa5da-aadb-44b1-abdd-300f6e224c10",
+    "name": "TestePetz - Consulta Ração",
+    "commands": [{
+      "id": "db0f56ba-fd82-4340-9937-aa6ca8da7d4c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "822f1a97-ad89-4566-aba2-89d551a5a345",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "657x709",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7032adc7-dda3-4436-93b5-374691852957",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d872579f-3ac4-462b-a76a-9c495f34219a",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": "Premier"
+    }, {
+      "id": "710de93d-3a4d-405f-982a-4e77d608b9c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-icon",
+      "targets": [
+        ["css=.custom-icon", "css:finder"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "daf01999-712f-4029-b16c-f9225f4c5957",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bd1fa5da-aadb-44b1-abdd-300f6e224c10"]
+  }],
+  "urls": ["https://www.petz.com.br/"],
+  "plugins": []
+}

@@ -1,0 +1,164 @@
+{
+  "id": "8d22bde5-c583-4dc6-9fa3-5e13b9d94ba0",
+  "version": "2.0",
+  "name": "TestePetz - Validação Produto",
+  "url": "https://www.petz.com.br",
+  "tests": [{
+    "id": "7423c4ab-41b6-4827-94e0-509cf7902fc6",
+    "name": "TestePetz - Validação Produto",
+    "commands": [{
+      "id": "dba51a0b-c067-4a8f-8674-dc9554d8299d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "824e0df2-12cd-4f82-a5e4-5609486846b3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02d86aea-87c4-4e35-bb6f-85d07ed15ab5",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": "premier"
+    }, {
+      "id": "928ea4b8-1cfc-46bd-8175-e5e8386086b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-icon",
+      "targets": [
+        ["css=.custom-icon", "css:finder"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcccef7d-2092-417a-9861-a2919b963178",
+      "comment": "",
+      "command": "click",
+      "target": "css=.liProduct:nth-child(3) .product-img",
+      "targets": [
+        ["css=.liProduct:nth-child(3) .product-img", "css:finder"],
+        ["xpath=//img[@alt='Ração Premier Fórmula para Cães Filhotes de Raças Grandes Sabor Frango - 15kg']", "xpath:img"],
+        ["xpath=(//a[@id='produto-href']/img)[3]", "xpath:idRelative"],
+        ["xpath=//li[3]/a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afb2f4ff-7a43-42fb-bb7c-8a29fc5b5845",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sp-current-big > img",
+      "targets": [
+        ["css=.sp-current-big > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://staticpetz.stoom.com.br/fotos/1469037348170.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='divProdutoVariacao']/div/div[2]/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd4e8736-be1d-4832-bc6c-f0cb10aaa81c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.sp-current-big > img",
+      "targets": [
+        ["css=.sp-current-big > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://staticpetz.stoom.com.br/fotos/1469037348170.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='divProdutoVariacao']/div/div[2]/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b86cdfa2-210e-4832-a27f-4b14f775c808",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='divProdutoVariacao']/div/div[3]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ração Premier Fórmula para Cães Filhotes de Raças Grandes Sabor Frango - 15kg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12aab104-3ff0-4456-85c8-064c42c4f6b5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='divProdutoVariacao']/div/div[3]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ração Premier Fórmula para Cães Filhotes de Raças Grandes Sabor Frango - 15kg')]", "xpath:innerText"]
+      ],
+      "value": "Ração Premier Fórmula para Cães Filhotes de Raças Grandes Sabor Frango - 15kg"
+    }, {
+      "id": "81afd0a8-5d30-4540-ae38-589f81addb4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.price-current",
+      "targets": [
+        ["css=.price-current", "css:finder"],
+        ["xpath=//div[@id='divProdutoVariacao']/div[2]/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a079540-9eb0-4ac5-bfe8-415973f9513a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.price-current",
+      "targets": [
+        ["css=.price-current", "css:finder"],
+        ["xpath=//div[@id='divProdutoVariacao']/div[2]/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "R$ 190,99"
+    }, {
+      "id": "470056f9-1e55-4ecc-927e-00719641105e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.price-subscriber",
+      "targets": [
+        ["css=.price-subscriber", "css:finder"],
+        ["xpath=//div[@id='divProdutoVariacao']/div[2]/div[3]/div/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'R$ 171,89')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cc47ee0-5c97-45e2-bbd1-870340344fcd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.price-subscriber",
+      "targets": [
+        ["css=.price-subscriber", "css:finder"],
+        ["xpath=//div[@id='divProdutoVariacao']/div[2]/div[3]/div/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'R$ 171,89')]", "xpath:innerText"]
+      ],
+      "value": "R$ 171,89"
+    }]
+  }],
+  "suites": [{
+    "id": "5181557b-9539-4f2c-ba78-73868efbd177",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7423c4ab-41b6-4827-94e0-509cf7902fc6"]
+  }],
+  "urls": ["https://www.petz.com.br/"],
+  "plugins": []
+}
